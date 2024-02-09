@@ -1,6 +1,18 @@
+# Grocery Website Project
+
+This project is an Angular-based grocery website that provides users with the ability to browse, add items to the cart, and remove items from the cart.
+
 # Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+
+## Features
+
+- **Browse Products:** Explore a variety of grocery products conveniently categorized for easy navigation.
+
+- **Add to Cart:** Users can add products to their shopping cart with a simple click.
+
+- **Remove from Cart:** Remove items from the cart if users change their minds or want to make adjustments.
 
 ## Development server
 

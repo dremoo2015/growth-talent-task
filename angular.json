@@ -25,9 +25,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/jquery.sticky.js",
+              "src/assets/js/jquery.easing.1.3.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/bxslider.min.js",
+              "src/assets/js/script.slider.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -83,13 +96,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5dcd1ac3-924f-4fb4-ae5d-a368cac08c79"
   }
 }

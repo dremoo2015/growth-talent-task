@@ -1,0 +1,74 @@
+<div class="single-product-area">
+  <div class="zigzag-bottom"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="product-content-right">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="product-images">
+                <div class="product-main-img">
+                  <img [src]="product.photo" alt="" class="product-img" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="product-inner">
+                <h2 class="product-name">{{ product.title }}</h2>
+                <div class="product-inner-price">
+                  <span class="product-price">EGP {{ product.price }}</span>
+                </div>
+                <div class="product-weight">
+                  <span>Grocery Weight</span>
+                  <select>
+                    <option>250 gm</option>
+                    <option>500 gm</option>
+                    <option>750 gm</option>
+                    <option>1000 gm</option>
+                  </select>
+                </div>
+                <span class="product-quantity">Quantity</span>
+                <form action="" class="cart">
+                  <div class="quantity">
+                    <input
+                      type="number"
+                      size="4"
+                      class="input-text qty text"
+                      title="Qty"
+                      value="1"
+                      name="quantity"
+                      min="1"
+                      step="1"
+                    />
+                  </div>
+                  <button
+                    class="add_to_cart_button"
+                    (click)="addCartItem(product)"
+                    type="submit"
+                  >
+                    Add to cart
+                  </button>
+                </form>
+              </div>
+              <div class="info">
+                <span
+                  ><i class="fa fa-clock-o" aria-hidden="true"></i> Delivered
+                  Within: The Same Day</span
+                >
+                <hr />
+                <span
+                  ><img
+                    src="../../assets/img/spinneys.PNG"
+                    class="spinneys-logo"
+                  />Sold and delivered by spinneys</span
+                >
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<div class="product-big-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="cart-title-area">
+          <span>Subtotal</span>
+          <span>{{ getTotalPrice() }} EGP</span>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button type="button" class="btn checkout-button">Check out</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<div class="single-product-area">
+  <div class="zigzag-bottom"></div>
+  <div class="container">
+    <div class="row">
+      @for (CartItem of Cart.items; track CartItem.product.id) {
+      <div class="cart-item-container">
+        <div class="cart-item col-sm-8">
+          <img [src]="CartItem.product.photo" />
+          <div class="cart-item-info">
+            <span>{{ CartItem.product.title }}</span>
+            <span class="cart-item-price"
+              >{{ CartItem.product.price }} EGP</span
+            >
+            <div class="cart-item-btns">
+              <button
+                type="button"
+                class="minus"
+                (click)="decreaseQuantity(CartItem)"
+              >
+                -
+              </button>
+              <button
+                type="button"
+                class="input-text qty text"
+                value=""
+                min="0"
+                step="1"
+              >
+                {{ CartItem.quantity }}
+              </button>
+              <button
+                type="button"
+                class="plus"
+                (click)="increaseQuantity(CartItem)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 cart-item-options">
+          <button
+            class="remove btn btn-outline-danger"
+            (click)="removeItem(product)"
+          >
+            Remove
+          </button>
+          <button class="btn">Move to wishlist</button>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</div>

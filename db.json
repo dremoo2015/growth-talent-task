@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Spinneys Value Sponge For Glass Cookware",
+      "price": 3.95,
+      "photo": "../assets/img/Sponge.png"
+    },
+    {
+      "id": 2,
+      "title": "Spinneys Value Grooved Sponge Scrubber, 3pcs",
+      "price": 15.95,
+      "photo": "../assets/img/groved spong.png"
+    },
+    {
+      "id": 3,
+      "title": "Spinneys Black Eyed Peas, 500Gm",
+      "price": 14.25,
+      "photo": "../assets/img/black peas.png"
+    },
+    {
+      "id": 4,
+      "title": "Spinneys Sliced Pinnapple, 820g",
+      "price": 54.95,
+      "photo": "../assets/img/anans.png"
+    },
+    {
+      "id": 5,
+      "title": "Abu Auf Alkafela Kamar Aldin",
+      "price": 34.95,
+      "photo": "../assets/img/amereldein.png"
+    },
+    {
+      "id": 6,
+      "title": "Smoked Roasted Turkey",
+      "price": 67.49,
+      "photo": "../assets/img/meat.png"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<div class="maincontent-area">
+  <div class="zigzag-bottom"></div>
+  <div class="container">
+    <div class="row" class="no-of-products">
+      <span>{{ products.length }} Products</span>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="latest-product">
+          @for(product of products; track $index) {
+          <div class="product-container">
+            <div>
+              <img [src]="product.photo" />
+            </div>
+            <div class="product-details">
+              <a
+                routerLink="/single-product/{{ product.id }}"
+                class="product-title"
+                >{{ product.title }}</a
+              >
+              <span class="product-price">EGP {{ product.price }}</span>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn btn-light add-to-cart-button"
+                (click)="addCartItem(product)"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
